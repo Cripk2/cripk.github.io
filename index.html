@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en" theme="White">
+<head>
+<meta charset="utf-8">
+<title>cripk.co · Best Bio Link</title>
+<meta property="og:title" content="cripk.co">
+<meta name="description" content="Welcome!">
+<meta property="og:description" content="Welcome!">
+<meta property="og:image" content="https://media.discordapp.net/attachments/1203438088806858763/1246167599474151424/2eb2b433dcbd0e1f7cab2657320a2c1e.gif?ex=665b6784&is=665a1604&hm=d0a23da52d0224b739eedf6493a252bf3c92213f501cb4f298b4312709b92009&=">
+<meta name="twitter:card" content="summary">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#2F3136">
+<link href="assets/images/verified.svg" rel="shortcut icon" type="image/x-icon">
+<meta name="twitter:card" content="summary">
+<link rel="preload" href="module/newww/css/app.css" as="style">
+<link rel="stylesheet" href="module/newww/main.css">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+<link href="assets/vendors/animation/animate.css" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<link href="assets/vendors/animation/animate.css" rel="stylesheet">
+<script src="script.js.html" data-site="IHGLANPG" defer></script>
+<style>
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 1000;
+    transition: opacity 0.5s, visibility 0.5s;
+  }
+  .overlay.hidden {
+    opacity: 0;
+    visibility: hidden;
+  }
+  .overlay span {
+    color: white;
+    font-size: 2em;
+    cursor: pointer;
+  }
+  .blur-effect {
+    filter: blur(10px);
+  }
+  video.background-video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+    background: no-repeat;
+    background-size: cover;
+  }
+</style>
+</head>
+<body class="fedslol">
+<!-- Overlay -->
+<div class="overlay">
+  <span>Click Anywhere to Enter</span>
+</div>
+<audio id="backgroundMusic" autoplay loop>
+  <source src="https://cdn.discordapp.com/attachments/1203438088806858763/1246159253715157045/kahdami_-_look_n_the_mirror.mp3?ex=665b5fbe&is=665a0e3e&hm=8521674c54237d0c3f13ac070485f2f06d044ae632301389161da1d1d7c8939a&" type="audio/mpeg" />
+  Your browser does not support the audio element.
+</audio>
+<main class="blur-effect">
+<script>
+
+var TxtType = function (el, toRotate, period) {
+  this.toRotate = toRotate;
+  this.el = el;
+  this.loopNum = 0;
+  this.period = parseInt(period, 10) || 2000;
+  this.txt = "";
+  this.tick();
+  this.isDeleting = false;
+};
+
+TxtType.prototype.tick = function () {
+  var i = this.loopNum % this.toRotate.length;
+  var fullTxt = this.toRotate[i];
+
+  if (this.isDeleting) {
+    this.txt = fullTxt.substring(0, this.txt.length - 1);
+  } else {
+    this.txt = fullTxt.substring(0, this.txt.length + 1);
+  }
+
+  this.el.innerHTML = '<span class="wrap">' + this.txt + "</span>";
+
+  var that = this;
+  var delta = 200 - Math.random() * 100;
+
+  if (this.isDeleting) {
+    delta /= 2;
+  }
+
+  if (!this.isDeleting && this.txt === fullTxt) {
+    delta = this.period;
+    this.isDeleting = true;
+  } else if (this.isDeleting && this.txt === "") {
+    this.isDeleting = false;
+    this.loopNum++;
+    delta = 500;
+  }
+  setTimeout(function () {
+    that.tick();
+  }, delta);
+};
+
+window.onload = function () {
+  var elements = document.getElementsByClassName("typewrite");
+  for (var i = 0; i < elements.length; i++) {
+    var toRotate = elements[i].getAttribute("data-type");
+    var period = elements[i].getAttribute("data-period");
+    if (toRotate) {
+      new TxtType(elements[i], JSON.parse(toRotate), period);
+    }
+  }
+  // INJECT CSS
+  var css = document.createElement("style");
+  css.type = "text/css";
+  css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
+  document.body.appendChild(css);
+
+  // Overlay click event
+  document.querySelector('.overlay').addEventListener('click', function() {
+    document.querySelector('.overlay').classList.add('hidden');
+    document.querySelector('main').classList.remove('blur-effect');
+  });
+};
+
+</script>
+<main style="background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url('https://cdn.discordapp.com/attachments/1203438088806858763/1246166799494414560/0287d3ba8b3330fca99f69e2001d3168.gif?ex=665b66c5&is=665a1545&hm=4a005bc02800a4eb537022394c683f2b18fd1f2f0dbf3d2ee4500f2127edc048&'); background-position: center; background-repeat: no-repeat; background-size: cover; background-attachment: fixed; position: relative;">
+  <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5); backdrop-filter: blur(5px);"></div>
+<div class="fixed w-full h-full"></div>
+<div class="biolink" style="height:100%;width:100%;">
+<div class="relative w-full h-full px-4 py-16 table">
+<div class="table-cell align-middle text-center">
+<div class="bg-main rounded-md shadow-4xl w-full mx-auto card animate-slide-up not-last-child:mb-12 max-w-[1100px] mt-14">
+<div class="p-10">
+<div class="not-last-child:mb-8">
+<div class="-mt-[85px]">
+<img class="w-44 h-44 rounded-full mx-auto shadow-avatar" src="https://media.discordapp.net/attachments/1203438088806858763/1246167599474151424/2eb2b433dcbd0e1f7cab2657320a2c1e.gif?ex=665b6784&is=665a1604&hm=d0a23da52d0224b739eedf6493a252bf3c92213f501cb4f298b4312709b92009&=" title="Image" alt="Image" draggable="false" /> </div>
+</div>
+<div class="not-last-child:mb-8">
+<div class="flex justify-center items-center space-x-2">
+<h2 class="text-[20px] text-white font-semibold" style="color: #fff; background-image: url('https://images-ext-1.discordapp.net/external/4-hTyuXIC4k7hYW--7kkGiUVZT4Q3eHxGtETvMpdXhs/https/cdn.xoa.me/uploads/3676f67a-fb22-4309-9d7b-a17d28826667.gif');filter: drop-shadow(8px 8px 10px #00ffff);color:#00ffff;">Devbyte.</h2>
+<span class="cursor-pointer text-xl" title="Verified">
+<div class="verified-icon"><img src="assets/images/verified.svg" class="verified-icon-image verified-icon-image-dark" style="position: relative; height: 15px; left: 15%;"></div>
+</span>
+<span class="cursor-pointer text-xl" title="Premium">
+<div class="premium"><img src="https://www.svgrepo.com/show/269443/diamond.svg" class="verified-icon-image verified-icon-image-dark" style="position: absoulute; height: 12px; left: 60%;"></div>
+</span>
+</div>
+</p>
+<p class="text-sm">
+<i class="ri-eye-2-fill"></i>
+ </p>
+</div>
+<div class="not-last-child:mb-8">
+<div class="mx-auto max-w-[750px]">
+<p>
+<span class="typewrite" data-period="2000" data-type='[ "Best Coder Here", "Cilo Is Ass At Coding"]'>
+<span class="wrap"></span>
+</span>
+</p>
+</div>
+</div>
+<div class="flex justify-center items-center space-x-2">
+<div style="text-align: center;">
+<a href="https://discord.com/users/493466600188674048" target="_blank">
+<img src="https://discord.c99.nl/widget/theme-4/493466600188674048.png" style="
+    width: 300px;
+"></a>
+</div>
+</div>
+</div>
+</div>
+<div class="flex justify-center items-center space-x-2">
+<div style="text-align: center;">
+<a href="" target="_blank">
+<img src="https://tenor.com/view/skeletons-berserk-roast-skeleton-gif-25184374" style="
+    width: 50%; height: 50%;
+"></a>
+</div>
+</div>
+<div class="1w-full mx-auto card animate-slide-up not-last-child:mb-12 max-w-[1100px]">
+<div class="!p-0">
+<div class="flex flex-wrap justify-between gap-6">
+<a href="https://discord.gg/xhhxXAsK" target="_blank" rel="noopener noreferrer nofollow" title="https://discord.gg/xhhxXAsK" class="bg-main rounded-xl flex-[100%] sm:flex-[45%] animate-slide-up shadow-4xl p-3 button" style="will-change: opacity, transform">
+<div class="flex items-center justify-between space-x-6">
+<span class="bg-secondary rounded-xl aspect-square h-16 p-3 flex items-center justify-center">
+<img class="drop-shadow-discord" src="module/newww/icons/link-2.svg">
+</span>
+<h2 class="w-full text-left text-grey">
+Discord
+</h2>
+<span class="w-20" style="margin-left: 157px;">
+<img src="assets/images/link-button-arrow.svg" style="width: 14px;" class="link-arrows">
+</span>
+</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div>
+</div>
+</main>
+<script src="js/page.js%3Fid=2c4f84bac56c0ce1881f.html"></script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vaafb692b2aea4879b33c060e79fe94621666317369993" integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA==" data-cf-beacon='{"rayId":"780dc4d02f1e3161","token":"033c33a962e74d16be982c1223e03590","version":"2022.11.3","si":100}' crossorigin="anonymous"></script>
+</body>
+</html>
